@@ -13,7 +13,7 @@ function getMensaje(mensaje){
     tarde: "Buenas tardes, ",	
     noche: "Buenas noches, "  
     };
-	console.log(nombre);
+	console.log("Nombre Completo: " + nombre);
     
 	if ((horasFecha > 6 && horasFecha < 15) || horasFecha == 15){
 		return parteDia.manana + '<b><span style="color: #0071b3;font-family:\'Enriqueta\', sans-serif!important;font-size: 26px;text-transform: capitalize;">' + nombre + ' !</span></b>';
