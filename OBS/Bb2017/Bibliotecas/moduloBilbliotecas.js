@@ -42,12 +42,12 @@ function fadeIn(el) {
  
   tick();
 }
-var navFrame = parent.document.getElementById('navFrame');
-var navFrameAncho = navFrame.style.width;
+var navFrameMenu = parent.document.getElementById('navFrame');
+var navFrameAncho = navFrameMenu.style.width;
 function contraerMenu(){
 if (navFrameAncho == "20px"){
 }
 else{
-navFrame.contentDocument.getElementById("switchTopframe").click();
+navFrameMenu.contentDocument.getElementById("switchTopframe").click();
 }
 }
