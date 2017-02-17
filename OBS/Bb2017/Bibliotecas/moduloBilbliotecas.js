@@ -50,9 +50,7 @@ if (contraido){
 }
 else{
 var x = parent.document.getElementById("navFrame");
-var inicio = setTimeout(function(){
-  x.contentDocument.getElementById("switchTopframe").click();
-},2500);
+x.contentDocument.getElementById("switchTopframe").click();
 contraido = true;
 }
 }
