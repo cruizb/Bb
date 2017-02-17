@@ -15,13 +15,13 @@ function getMensaje(mensaje){
 	console.log("Nombre Completo: " + nombre);
     
 	if (horasFecha >= 5 && horasFecha <= 12){
-		return parteDia.manana + '<b><span style="color: #0071b3;font-family:\'Enriqueta\', sans-serif!important;font-size: 26px;">' + nombre + '!</span></b>';
+		return parteDia.manana + '<b><span style="color: #0071b3;font-family:\'Enriqueta\', sans-serif!important;font-size: 26px;text-transform: capitalize;">' + nombre + '!</span></b>';
 	}       
     else if (horasFecha > 12 && horasFecha <= 21){
-    	return parteDia.tarde + '<b><span style="color: #0071b3;font-family:\'Enriqueta\', sans-serif!important;font-size: 26px;">' + nombre + '!</span></b>';
+    	return parteDia.tarde + '<b><span style="color: #0071b3;font-family:\'Enriqueta\', sans-serif!important;font-size: 26px;text-transform: capitalize;">' + nombre + '!</span></b>';
     }
     else{
-        return parteDia.noche + '<b><span style="color: #0071b3;font-family:\'Enriqueta\', sans-serif!important;font-size: 26px;">' + nombre + '!</span></b>';    
+        return parteDia.noche + '<b><span style="color: #0071b3;font-family:\'Enriqueta\', sans-serif!important;font-size: 26px;text-transform: capitalize;">' + nombre + '!</span></b>';    
 	}
 }
 
