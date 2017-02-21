@@ -42,12 +42,3 @@ function fadeIn(el) {
  
   tick();
 }
-var navFrameMenu = parent.document.getElementById('navFrame');
-var navFrameAncho = navFrameMenu.style.width;
-function contraerMenu(){
-if (navFrameAncho == "20px"){
-}
-else{
-navFrameMenu.contentDocument.getElementById("switchTopframe").click();
-}
-}
