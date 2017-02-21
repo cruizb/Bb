@@ -1,5 +1,5 @@
 var x = parent.document.getElementById("navFrame");
-if (navFrameAncho == "20px"){
+if (x == "20px"){
 }
 else{
 var inicio = setTimeout(function(){
