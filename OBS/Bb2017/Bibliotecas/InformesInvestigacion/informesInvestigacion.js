@@ -16,16 +16,21 @@ function tabSelector(evt, tabId) {
 
 document.getElementById("defaultOpen").click();
 
-
-
-var allenlaces = document.getElementsByClassName('enlace');
+/*var allenlaces = document.getElementsByClassName('enlace');
 var allpdf = document.getElementsByClassName('pdf');
 var allitems = document.getElementsByClassName('item');
 var allitemsDesc = document.getElementsByClassName('item-desc');
 var j = allpdf.length;
 
+allitemsDesc.addEventListener("click", function(){
+	console.log("hola soy el addEventListener");
+});*/
+
 function resaltar(elm){
-	for (var i=0; i<j; i++){
+	var allitemsDesc = document.getElementsByClassName('item-desc');
+	var allpdf = document.getElementsByClassName('pdf');
+	var j = allpdf.length;
+	for (var i=0; i < j; i++){
 	allitemsDesc[i].style.background = "none";
 	}
     
@@ -34,12 +39,21 @@ function resaltar(elm){
 }
 
 function reset(){
-	for (var i=0; i<j; i++){
+	var allitemsDesc = document.getElementsByClassName('item-desc');
+	var allpdf = document.getElementsByClassName('pdf');
+	var j = allpdf.length;
+	for (var i=0; i < j; i++){
 	allitemsDesc[i].style.background = "none";
     }
 }
 
 function downloader(elm){
+  var allitemsDesc = document.getElementsByClassName('item-desc');
+  var allenlaces = document.getElementsByClassName('enlace');
+  var allpdf = document.getElementsByClassName('pdf');
+  var allitems = document.getElementsByClassName('item');
+  var j = allpdf.length;
+	
 	for (var i=0; i<j; i++){
 	allpdf[i].style.width = "0px";
     allenlaces[i].style.display = "none";
