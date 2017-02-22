@@ -21,11 +21,12 @@ document.getElementById("defaultOpen").click();
 var allenlaces = document.getElementsByClassName('enlace');
 var allpdf = document.getElementsByClassName('pdf');
 var allitems = document.getElementsByClassName('item');
+var allitemsDesc = document.getElementsByClassName('item-desc');
 var j = allpdf.length;
 
 function resaltar(elm){
 	for (var i=0; i<j; i++){
-	allpdf[i].nextElementSibling.style.background = "none";
+	allitemsDesc[i].style.background = "none";
 	}
     
   elm.style.background = "#d2d2d2";
@@ -34,7 +35,7 @@ function resaltar(elm){
 
 function reset(){
 	for (var i=0; i<j; i++){
-	allpdf[i].nextElementSibling.style.background = "none";
+	allitemsDesc[i].style.background = "none";
     }
 }
 
@@ -43,7 +44,7 @@ function downloader(elm){
 	allpdf[i].style.width = "0px";
     allenlaces[i].style.display = "none";
     allitems[i].style.background = "none";
-    allpdf[i].nextElementSibling.style.fontWeight = "normal";
+    allitemsDesc[i].style.fontWeight = "normal";
     }
     
   elm.parentElement.nextElementSibling.style.display = "block";
