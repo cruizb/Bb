@@ -94,9 +94,9 @@ var css = 'button.accordion {'
 	+'}'
 
 	;
-	
-	head = document.head || document.getElementsByTagName('head')[0];
-    style = document.createElement('style');
+console.log("cargando css blog");
+head = document.head || document.getElementsByTagName('head')[0];
+style = document.createElement('style');
 
 style.type = 'text/css';
 if (style.styleSheet){
