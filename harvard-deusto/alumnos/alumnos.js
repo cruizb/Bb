@@ -27,11 +27,11 @@ function manual(inpt) {
 var url = document.URL; 
 var linkPdfManual = inpt.parentElement;
 if(url.match(/campus.eae.es/)){
-     linkPdfManual.href = "/modules/_3256_1/EAE-Manual%20plataforma%20Harvard%20Deusto%202016-2017.pdf"; 
+     linkPdfManual.href = "/modules/_3256_1/EAE-Manual%20plataforma%20Harvard%20Deusto%202017.pdf"; 
 	 } else if (url.match(/campus.ostelea.com/)){
      linkPdfManual.href = "/modules/_3256_1/OSTELEA-Manual%20plataforma%20HD%202016-2017.pdf";
 	 } else if (url.match(/campus.obs-edu.com/)){ 
-	 linkPdfManual.href = "/modules/_3256_1/OBS-Manual%20plataforma%20Harvard%20Deusto%202016-2017.pdf"; 
+	 linkPdfManual.href = "/modules/_3256_1/OBS-Manual%20plataforma%20Harvard%20Deusto%202017.pdf"; 
 	 } else if (url.match(/campus.eaeprogramas.es/)){
      linkPdfManual.href = "/modules/_3256_1/EAE%20Distancia-Manual%20plataforma%20HD%202016-2017.pdf";
 	 } else if (url.match(/campus.esdesignbarcelona.com/)){
