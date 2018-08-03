@@ -30,3 +30,5 @@ videocontainer.innerHTML = '\
 videoscript.parentElement.appendChild(videocontainer);
 
 }
+
+console.log("");
